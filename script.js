@@ -3,6 +3,12 @@ const rockBtn = document.getElementById("rock");
 const scissorsBtn = document.getElementById("scissors");
 const userChoice = [paperBtn, rockBtn, scissorsBtn];
 const computerOptions = ["rock", "paper", "scissors"];
+const computerScoreText = document.getElementById("computer-score");
+const userScoreText = document.getElementById("user-score");
+const status = document.getElementById("status");
+
+let computerScore = 0;
+let userScore = 0;
 
 function onButtonClick() {
   userChoice.forEach((option) => {
@@ -17,26 +23,38 @@ function onButtonClick() {
 
 function checkWinner(userChoice, computerChoice) {
   if (computerChoice == userChoice) {
-    console.log("tie");
+    status.innerHTML = "Tie";
   } else if (userChoice == "rock") {
     if (computerChoice == "paper") {
-      console.log("computer wins");
+      setComputerScore();
     } else {
-      console.log("user wins");
+      setUserScore();
     }
   } else if (userChoice == "scissors") {
     if (computerChoice == "rock") {
-      console.log("computer wins");
+      setComputerScore();
     } else {
-      console.log("user wins");
+      setUserScore();
     }
   } else if (userChoice == "paper") {
     if (computerChoice == "scissors") {
-      console.log("computer wins");
+      setComputerScore();
     } else {
-      console.log("user wins");
+      setUserScore();
     }
   }
+}
+
+function setComputerScore() {
+  computerScore++;
+  computerScoreText.innerHTML = ` ${computerScore}`;
+  status.innerHTML = "Computer Won";
+}
+
+function setUserScore() {
+  userScore++;
+  userScoreText.innerHTML = `${userScore}`;
+  status.innerHTML = "You Won";
 }
 
 onButtonClick();
