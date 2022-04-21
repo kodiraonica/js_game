@@ -25,7 +25,7 @@ function onButtonClick() {
 
 function checkWinner(userChoice, computerChoice) {
     if(computerChoice == userChoice) {
-        console.log("tie")
+        status.innerHTML = "Tie";
     } else if(userChoice == "rock") {
         if (computerChoice == "paper") {
             setComputerScore()
@@ -50,13 +50,13 @@ function checkWinner(userChoice, computerChoice) {
 
 function setComputerScore(){
     computerScore++
-    computerScoreText.innerHTML = `${computerScore}`;
+    computerScoreText.innerHTML = ` ${computerScore} `;
     status.innerHTML = "Computer won"
 }
 
 function setUserScore() {
     userScore++
-    userScoreText.innerHTML = `${userScore}`;
+    userScoreText.innerHTML = ` ${userScore} `;
     status.innerHTML = "User won"
 }
 
