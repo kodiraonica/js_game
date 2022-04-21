@@ -6,7 +6,7 @@ const computerChoice = ["rock", "paper", "scissors"];
 
 userChoice.forEach((option) => {
     option.addEventListener ("click", () => {
-        const choiceNumber = Math.floor(Math.random() * 4);
+        const choiceNumber = Math.floor(Math.random() * 3);
         const computerChoice = computerOptions[choiceNumber];
         
     })
