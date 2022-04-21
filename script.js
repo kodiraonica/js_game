@@ -25,7 +25,7 @@ function onButtonClick() {
 
 function checkWinner(userChoice, computerChoice) {
     if (computerChoice == userChoice) {
-        console.log("tie");
+        status.innerHTML = "tie"
     }
 
     else if (userChoice == 'rock') {
