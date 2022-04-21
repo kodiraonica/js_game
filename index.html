@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +10,39 @@
     <link rel="stylesheet" href="style.css">
     <title>Rock, Paper, Scissors</title>
 </head>
-<body>    
+
+<body>
+    <div class="flex">
+        <div class="col">
+            <h1>Rock, paper, scissors</h1>
+            <h2>Status: <span id="status">Start of the game</span></h2>
+        </div>
+
+        <div class="col text-right">
+            <h2>Your score: <span id="user-score">0</span> </h2>
+            <h2>Computer score: <span id="computer-score">0</span> </h2>
+            <h2>Computer choice: <span id="computer-choice"></span></h2>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="col flex content-center items-end">
+            <img src="./assets/robot.png" alt="" class="w-100">
+        </div>
+
+        <div class="col mt-80">
+            <h2 class="text-center">Robot</h2>
+            <h4 class="text-center">vs.</h4>
+            <h2 class="text-center">Human</h2>
+        </div>
+
+        <div class="col flex">
+            <img src="./assets/paper.png" alt="" class="w-30" id="paper">
+            <img src="./assets/rock.png" alt="" class="w-30" id="rock">
+            <img src="./assets/scissors.png" alt="" class="w-30" id="scissors">
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
+
 </html>
