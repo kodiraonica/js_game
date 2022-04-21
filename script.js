@@ -5,6 +5,7 @@ const userChoice = [paperBtn, rockBtn, scissorsBtn];
 const computerOptions = ["rock", "paper", "scissors"];
 
 const computerScoreText = document.getElementById("computer-score");
+const userScoreText = document.getElementById("user-score");
 const status = document.getElementById("status");
 
 const computerChoiceText = document.getElementById("computer-choice");
