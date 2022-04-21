@@ -1,6 +1,6 @@
-const scissorsBtn = document.getElementById("rock");
+const scissorsBtn = document.getElementById("scissors");
 const paperBtn = document.getElementById("paper");
-const rockBtn = document.getElementById("scissors");
+const rockBtn = document.getElementById("rock");
 const computerOptions = ['rock', 'paper', 'scissors'];
 
 const userChoice = [scissorsBtn, paperBtn, rockBtn];
